@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "飞信机器人",
+  "description": "飞信自动应答机器人，可检测自己是否在线",
+  "version": "1.0",
+
+  "permissions": [
+    "webRequest",
+    "https://webim.feixin.10086.cn/*"
+  ],
+
+  "web_accessible_resources": [
+    "inject.js"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://webim.feixin.10086.cn/*"],
+      "js": ["jquery-1.11.2.js", "content.js"]
+    }
+  ]
+}
