@@ -33,7 +33,7 @@ $(document).ajaxComplete(function(event, xhr, settings) {
     var data = JSON.parse(xhr.responseText);
     if (data.rv && data.rv[0] && data.rv[0].DataType == 3) {
         var msg = data.rv[0].Data;
-        var responseMsg = msg.sTime + '消息：' + msg.msg.replace(/(<([^>]+)>)/ig, ''); + ' 已收到';
+        var responseMsg = Ai.process(msg);
         $.post('https://webim.feixin.10086.cn/WebIM/SendMsg.aspx?Version=' + ApiUrl.Version, {
             To: msg.fromUid,
             IsSendSms: 0,
@@ -42,4 +42,3 @@ $(document).ajaxComplete(function(event, xhr, settings) {
         });
     }
 });
-console.log('content.js loaded');
