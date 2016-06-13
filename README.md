@@ -6,4 +6,3 @@
 * `我还?(在线|活着)(吗|么)` 检测是否在线
 * `现在(几点|时间)` 当前时间
 * `(你是谁|(你叫(什么|啥)(名字)?))` 名字
-* `QCMS` QCMS的飞信群号 77071471、http://doraemon.hulk.corp.qihoo.net:8360/user/home#tf-user-home-qcms
