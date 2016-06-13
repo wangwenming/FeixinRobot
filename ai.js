@@ -55,9 +55,3 @@ rules.whoami = {
     }
 };
 
-rules.qcms = {
-    test: /QCMS/i,
-    response: function(msg) {
-        return 'QCMS的飞信群号是：77071471，文档：http://doraemon.hulk.corp.qihoo.net:8360/user/home#tf-user-home-qcms';
-    }
-};
